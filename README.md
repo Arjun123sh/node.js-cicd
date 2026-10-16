@@ -43,6 +43,20 @@ The server will start on `http://localhost:3000` (or the port defined by `PORT` 
 npm test
 ```
 
+### 4. Run with Docker
+- **Build the image:**
+  ```bash
+  docker build -t todo-api .
+  ```
+- **Run the container:**
+  ```bash
+  docker run -d -p 3000:3000 --name todo-app todo-api
+  ```
+- **Inspect container status and health:**
+  ```bash
+  docker ps
+  ```
+
 ---
 
 ## API Endpoints
